@@ -1,0 +1,13 @@
+{
+    "name": "ipctest",
+    "version": "0.0.0",
+    "builtin-baseline": "93b38546e271ac8047a6dd00469f14845beb4642",
+    "dependencies": [
+        {
+            "name": "arrow",
+            "features": []
+        },
+        "brotli",
+        "lz4"
+    ]
+}                                                                                                                                           
