@@ -8,6 +8,14 @@ using the Arrow IPC format.
 The C++ program also supports reading the file. It is not able to recover the
 file serialized by Rust.
 
+# Building C++
+1. Checkout recursively to instantiate the vcpkg submodule
+2. Ensure that you have a c++ in context (which g++)
+3. ./vcpkg/bootstrap-vcpkg.sh
+4. cmake -B build -S . -DCMAKE_TOOLCHAIN_FILE=./vcpkg/scripts/buildsystems/vcpkg.cmake
+5. make -C build
+6. ./build/rw read ./rust_out.bin
+
 # C++ generation.
 Ran with: a.out write out.bin.
 Diplays:
